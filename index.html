@@ -1,9 +1,66 @@
+<!DOCTYPE html>
+
 <html>
- 
-<body>
-  <h1>Jake Mair</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+    <head>
+        <link href='styles.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <title>My Personal Cheatsheet</title>
+    </head>
+    <body>
+        <header id='banner'>
+            <h1>Position and Display Documentation in CSS</h1>
+        </header>
+        <table id='position'>
+            <thead>
+                <tr>
+                    <th class='type'>Type</th>
+                    <th class='desc'>Description</th>
+                </tr>
+            </thead>
+            <tr>
+                <td class='type'>static</td>
+                <td class='desc'>The element is positioned according to the normal flow of the document. (default position)</td>
+            </tr>
+            <tr>
+                <td class='type'>relative</td>
+                <td class='desc'>The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left.</td>
+            </tr>
+            <tr>
+                <td class='type'>absolute</td>
+                <td class='desc'>The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block.</td>
+            </tr>
+            <tr>
+                <td class='type'>fixed</td>
+                <td class='desc'>The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block (html) and is not affected by scrolling</td>
+            </tr>
+            <tr>
+                <td class='type'>sticky</td>
+                <td class='desc'>A mix of relative and fixed, acts like a relatively positioned element until a certain scroll point and then it acts like a fixed element</td>
+            </tr>
+    
+        </table>
+        <table id='display'>
+            <thead>
+                <tr>
+                    <th class='type'>Type</th>
+                    <th class='desc'>Description</th>
+                </tr>
+            </thead>
+            <tr>
+                <td class='type'>Block</td>
+                <td class='desc'>The element generates a block element box, generating line breaks both before and after the element when in the normal flow.</td>
+            </tr>
+            <tr>
+                <td class='type'>Inline</td>
+                <td class='desc'>The element generates one or more inline element boxes that do not generate line breaks before or after themselves. In normal flow, the next element will be on the same line if there is space</td>
+            </tr>
+            <tr>
+                <td class='type'>Inline-block</td>
+                <td class='desc'>The element generates a block element box that will be flowed with surrounding content as if it were a single inline box (behaving much like a replaced element would).</td>
+            </tr>
+        </table>
+    </body>
+    <footer>
+        <h4>Made by Jakeem</h4>
+    </footer>
 </html>

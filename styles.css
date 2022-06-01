@@ -1,0 +1,72 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    background-color:hsl(186, 66%, 97%)
+}
+
+strong {
+    color: hsl(150, 50%, 75%);
+}
+
+th, td {
+    border: 1px solid hsl(180, 43%, 3%);
+    padding: 10px 10px;
+}
+
+th {
+    background-color: hsl(186, 66%, 77%);
+    color: hsl(189, 67%, 15%); 
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+tr:nth-child(odd) {
+    background-color:hsl(186, 66%, 96%);
+}
+
+tr:nth-child(even) {
+    background-color: hsl(186, 66%, 90%);
+}
+table {
+    margin: 100px auto;
+    border-collapse: collapse;
+    max-width: 1000px;
+    padding: 200px 200px;
+}
+header {
+    background-image: url();
+    height: 250px;
+    max-width: 800px;
+    background-size: contain;
+    margin: auto;
+}
+#banner {
+    position: relative;
+    height: 300px;
+    padding: 0 25%;
+    background: url("https://www.jotform.com/blog/wp-content/uploads/2008/07/photo-1505685296765-3a2736de412f.jpeg") center center no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+ 
+#banner h1 {
+    color: white; 
+    margin: auto; 
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+#banner:before { /* Orange Overlay */
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(186, 40%, 80%, 0.4);
+
+
+
+h4 {
+    margin: auto;
+    text-align: center;
+}
