@@ -1,72 +1,162 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 html {
-    font-family: 'Roboto', sans-serif;
-    background-color:hsl(186, 66%, 97%)
+    font-family: 'Playfair Display';
 }
 
-strong {
-    color: hsl(150, 50%, 75%);
-}
+/* Header */
 
-th, td {
-    border: 1px solid hsl(180, 43%, 3%);
-    padding: 10px 10px;
-}
-
-th {
-    background-color: hsl(186, 66%, 77%);
-    color: hsl(189, 67%, 15%); 
-    text-transform: uppercase;
-    font-size: 15px;
-}
-
-tr:nth-child(odd) {
-    background-color:hsl(186, 66%, 96%);
-}
-
-tr:nth-child(even) {
-    background-color: hsl(186, 66%, 90%);
-}
-table {
-    margin: 100px auto;
-    border-collapse: collapse;
-    max-width: 1000px;
-    padding: 200px 200px;
-}
-header {
-    background-image: url();
-    height: 250px;
-    max-width: 800px;
-    background-size: contain;
-    margin: auto;
-}
-#banner {
-    position: relative;
-    height: 300px;
-    padding: 0 25%;
-    background: url("https://www.jotform.com/blog/wp-content/uploads/2008/07/photo-1505685296765-3a2736de412f.jpeg") center center no-repeat;
-    background-size: cover;
-    text-align: center;
-  }
- 
-#banner h1 {
-    color: white; 
-    margin: auto; 
-    text-align: center;
-    position: relative;
-    top: 100px;
-}
-#banner:before { /* Orange Overlay */
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
+.nav-content {
     width: 100%;
-    height: 100%;
-    background-color: hsla(186, 40%, 80%, 0.4);
+    height: 5rem;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 5;
+}
 
+.nav-item {
+    list-style: none;
+    margin-right: 2rem;
+}
 
+.nav-item a {
+    text-decoration: none;
+    color: white;
+}
 
-h4 {
+.nav-item a:hover {
+    color: grey;
+}
+
+.nav-item:first-child {
     margin: auto;
+    margin-left: 1rem;
+}
+
+
+#mission {
+    background: url('https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder.png');
+    background-size: cover;
+    display:flex;
+    height: 300px;
     text-align: center;
+    position: relative;
+    top: 5rem;
+}
+
+#mission .content {
+    margin: auto;
+    width: 100%;
+    background: white;
+}
+
+.content h2 {
+    margin-bottom: 1rem;
+}
+
+.content h4 {
+    margin-bottom: .5rem;
+}
+.nav-item #logo {
+    height: 50px;
+    width: 50px;
+}
+
+/* Companies */
+
+#children {
+    text-align: center;
+    height: auto;
+    background-color: hsl(206, 100%, 97%);
+    color: black;
+    position: absolute;
+    top: 380px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+#children h2 {
+    padding-top: .5rem;
+    padding-bottom: .75rem;
+}
+#companies {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+    justify-content: center;
+}
+
+#companies img {
+    max-width: 200px;
+    max-height: 150px;
+    margin: .8rem 2rem;
+    padding: .8rem;
+}
+
+
+/* Team Members */
+
+#team {
+    text-align: center;
+    height: auto;
+    background-color: hsl(242, 72%, 20%);
+    position: absolute;
+    top: 920px;
+    width: 100%;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+#team h2 {
+    padding-top: .5rem;
+    padding-bottom: .75rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.members {
+    display: inline-flex;
+    flex-wrap:nowrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    background: hsl(206, 100%, 97%);
+}
+
+.members h5 {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-size: 16px;
+}
+.members img {
+    height: 200px;
+    width: auto;
+}
+
+.member {
+    padding-bottom: 1rem;
+}
+
+/* Footer */
+
+footer {
+    position: absolute;
+    top: 1247px;
+    height: 300px;
+    width: 100%;
+    background: black;
+    opacity: 0.8;
 }
